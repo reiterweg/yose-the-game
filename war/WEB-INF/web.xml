@@ -6,11 +6,19 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
 		<servlet-name>Ping</servlet-name>
-		<servlet-class>com.reiterweg.ytg.service.Ping</servlet-class>
+		<servlet-class>com.reiterweg.ytg.service.PingServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Ping</servlet-name>
 		<url-pattern>/ping</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PrimeFactors</servlet-name>
+		<servlet-class>com.reiterweg.ytg.service.PrimeFactorsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PrimeFactors</servlet-name>
+		<url-pattern>/primeFactors</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
